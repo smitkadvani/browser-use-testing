@@ -34,8 +34,23 @@ uv venv --python 3.11
 
 ## Step 4: Install Dependencies
 
-Run the following command to install the required libraries:
+Run the following commands to install the required libraries:
 
 ```bash
+uv run pip install browser-use
 uv run patchright install
 ```
+
+## Step 5: Create a `.env` File
+
+Create a `.env` file in the root directory of your project and add the following line:
+
+```plaintext
+OPENAI_API_KEY='API_KEY'
+```
+
+Replace `'API_KEY'` with your actual OpenAI API key.
+
+## Step 6: Run the Application
+
+Ensure the `.env` file is properly configured before running the application.
